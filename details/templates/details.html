@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Fertilizer Details{% endblock %}
+
+{% block content %}
+    <style>
+        .details-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .section p strong {
+            color: #333;
+        }
+    </style>
+
+    <div class="details-container">
+        <!-- Section 1: Why We Use ML and DL -->
+        <div class="section">
+            <h3>Why We Use Machine Learning (ML) and Deep Learning (DL)</h3>
+            <p>Machine Learning (ML) and Deep Learning (DL) are pivotal in modern data analysis and prediction. These technologies enable us to process large volumes of data efficiently, uncover patterns, and make accurate predictions. ML and DL models improve over time with more data, providing increasingly precise results.</p>
+            <p><strong>Benefits:</strong></p>
+            <ul>
+                <li>Enhanced prediction accuracy</li>
+                <li>Ability to handle complex data</li>
+                <li>Continuous improvement with more data</li>
+            </ul>
+        </div>
+
+        <!-- Section 2: Why Fertilizer and About Diseases -->
+        <div class="section">
+            <h3>Why Fertilizer and About Diseases</h3>
+            <p>Fertilizers are essential for improving soil fertility and boosting crop yields. Understanding the types of fertilizers and their impact on plant health is crucial for effective agriculture. Accurate prediction of fertilizer needs helps in optimizing growth and minimizing diseases.</p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li>Improves soil health and crop yield</li>
+                <li>Reduces risk of crop diseases</li>
+                <li>Optimizes nutrient usage</li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Why Our Website is More Important -->
+        <div class="section">
+            <h3>Why Our Website is More Important</h3>
+            <p>Our website provides a user-friendly platform for accessing fertilizer information and predictions. We leverage ML and DL to deliver personalized recommendations and insights. Our commitment to up-to-date information and user-centric design sets us apart in providing valuable agricultural support.</p>
+            <p><strong>Advantages:</strong></p>
+            <ul>
+                <li>Personalized fertilizer recommendations</li>
+                <li>Up-to-date information and trends</li>
+                <li>Intuitive user interface and experience</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

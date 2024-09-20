@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %} <!-- Load the static tag library here -->
+
+{% block title %}Home | Agriculture Solutions{% endblock %}
+
+{% block content %}
+<!-- Background Image and Carousel Section -->
+<section class="background-image-section">
+    <div class="carousel">
+        <!-- Carousel Images -->
+        <div class="carousel-images">
+            <img src="{% static 'img1.jpeg' %}" alt="Carousel Image 1">
+            <img src="{% static 'img3.jpeg' %}" alt="Carousel Image 2">
+            <img src="{% static 'img4.jpeg' %}" alt="Carousel Image 3">
+        </div>
+        <!-- Carousel Controls -->
+    </div>
+    <div class="text-container container1">
+        <h1>Welcome to Agriculture Solutions</h1>
+        <p>Your one-stop platform for modern agricultural needs. Discover the benefits of good fertilizers, disease prevention, and sustainable practices.</p>
+    </div>
+</section>
+    <!-- Carousel Images -->
+    <div class="container1">
+
+    <div class="carousel-images">
+<img src="{% static 'img1.jpeg' %}" alt="Carousel Image 3">
+<!-- About Agriculture Section -->
+<section class="about-agriculture">
+        <h2>About Agriculture</h2>
+        <p>Agriculture is the backbone of our society. Understanding its practices, benefits, and technologies is crucial for sustainable development. Learn more about how modern agriculture is evolving and how it impacts our daily lives.</p>
+    </div>
+</section>
+</div><br>
+<div class="container1">
+    <!-- Carousel Images -->
+    <div class="carousel-images">
+<img src="{% static 'img3.jpeg' %}" alt="Carousel Image 3">
+
+<!-- Importance of Good Fertilizers -->
+<section class="importance-fertilizers">
+        <h2>The Importance of Good Fertilizers</h2>
+        <p>Good fertilizers are essential for the growth and productivity of crops. They provide necessary nutrients and help in maintaining soil health, leading to higher yields and better quality produce. Explore our range of high-quality fertilizers and their benefits.</p>
+    </div>
+</section></div><br>
+</div>
+<div class="container1">
+    <!-- Carousel Images -->
+    <div class="carousel-images">
+<img src="{% static 'img4.jpeg' %}" alt="Carousel Image 3">
+
+<!-- Disease Prevention -->
+<section class="disease-prevention">
+        <h2>Why Disease Check is Required</h2>
+        <p>Regular disease checks are vital to prevent crop diseases from spreading and affecting yield. Early detection ensures timely treatment and effective control, reducing the risk of extensive damage. Learn about the tools and techniques for effective disease management.</p>
+    </div>
+</section></div><br>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Cart{% endblock %}
+
+{% block content %}
+<style>
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+        color: #333;
+    }
+
+    .cart-content {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .cart-content p {
+        font-size: 18px;
+        color: #333;
+        margin: 0 0 20px;
+    }
+
+    .cart-content .item-added {
+        font-size: 20px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .cart-content .empty {
+        font-size: 18px;
+        color: #ff3d3d;
+        text-align: center;
+    }
+</style>
+
+<div class="container">
+    <div class="header">
+        <h1>Cart</h1>
+    </div>
+    <div class="cart-content">
+        {% if fertilizer %}
+            <p class="item-added">Item added to cart: {{ fertilizer.name }}</p>
+        {% else %}
+            <p class="empty">Your cart is empty.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
